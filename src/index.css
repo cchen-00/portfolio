@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+body {
+  position: fixed;
+  left: 120px;
+  height: 100%;
+  width: calc(100% - 120px);
+  overflow: auto;
+  /* border: red 3px solid; */
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: rgb(91, 179, 13) 6px solid; */
+  height: 1000px;
+}
+
+
+
+
+
