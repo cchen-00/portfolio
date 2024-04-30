@@ -3,7 +3,7 @@ header {
   left: 0;
   top: 0;
   height: 100%;
-  width: 120px;
+  width: $headerHeight;
   border-right: $borderColor 1px solid;
   h1 {
     font-size: 1rem;

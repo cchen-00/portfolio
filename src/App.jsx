@@ -1,4 +1,4 @@
-import HomeScreen from "./screens/HomeScreen.jsx";
+import HomePage from "./pages/HomePage.jsx";
 import Header from "./components/Header.jsx";
 
 export default function App() {
@@ -6,7 +6,7 @@ export default function App() {
     <>
       <Header />
       <main>
-        <HomeScreen />
+        <HomePage />
       </main>
     </>
   );

@@ -1,5 +1,4 @@
 * {
-  box-sizing: border-box;
   font-family: $fontFamily;
 }
 
@@ -7,22 +6,14 @@ html {
   height: 100%;
   width: 100%;
   overflow: auto;
+  background-color: $bgColor;
 }
 
 body {
   position: fixed;
-  left: 120px;
+  left: $headerHeight;
   height: 100%;
-  width: calc(100% - 120px);
+  width: calc(100% - $headerHeight);
   overflow: auto;
   margin: 0;
-  background-color: $bgColor;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 1000px;
 }
