@@ -1,0 +1,21 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 120px;
+  border-right: $borderColor 1px solid;
+  h1 {
+    font-size: 1rem;
+    font-family: "Noto Serif", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  button {
+    @include buttonStyle;
+  }
+}
+
+@media (min-width: 768px) {
+}
