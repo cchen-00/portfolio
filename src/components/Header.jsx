@@ -1,5 +1,5 @@
-import logo from "../assets/images/logo.png";
 import logoColor from "../assets/images/logo-color.png";
+import logoFullname from "../assets/images/logo-fullname.png";
 import githubIcon from "../assets/icons/github_icon.png";
 import linkedinIcon from "../assets/icons/linkedin_icon.png";
 import behanceIcon from "../assets/icons/behance_icon.png";
@@ -9,8 +9,8 @@ export default function Header() {
   return (
     <header className="nav">
       <a href="#hero">
-        <img src={logo} alt="logo EC" className="nav__logo" />
-        <img src={logoColor} alt="colored logo EC" className="nav__colorLogo" />
+        <img src={logoColor} alt="logo EC" className="nav__logo" />
+        <img src={logoFullname } alt="logo Ember Chens" className="nav__topLogo" />
       </a>
 
       <div className="nav__menu">
