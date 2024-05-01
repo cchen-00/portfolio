@@ -1,5 +1,9 @@
 const Skills = () => {
-  return <div className="skills">Skills</div>;
+  return (
+    <div id="skills" className="skills">
+      Skills
+    </div>
+  );
 };
 
 export default Skills;

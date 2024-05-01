@@ -15,5 +15,6 @@ body {
   height: 100%;
   width: calc(100% - $headerHeight);
   overflow: auto;
+  scroll-behavior: smooth;
   margin: 0;
 }
