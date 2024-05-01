@@ -2,4 +2,72 @@
   height: 100vh;
   min-height: 780px;
   border-bottom: $borderColor 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__textContainer {
+    position: relative;
+    padding: 16px;
+    transform: translate(0, -10%);
+    &::before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      right: -100px;
+      width: $circleSize;
+      height: $circleSize;
+      border-radius: 50%;
+      background-color: $whiteColor;
+      z-index: -1;
+    }
+  }
+  &__name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $greyColor;
+    margin-bottom: 10px;
+  }
+  &__title {
+    font-size: 4rem;
+    line-height: 1.05;
+    letter-spacing: -0.05rem;
+    font-weight: 900;
+    color: $blackColor;
+    font-family: $titleFont;
+    margin: 0;
+  }
+  &__description {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: $blackColor;
+    margin: 22px 0 16px 0;
+    max-width: 460px;
+  }
+  &__button {
+    position: relative;
+    padding: 0;
+    color: $blackColor;
+    font-size: 1.3rem;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 40%;
+      z-index: -1;
+      height: 100%;
+      width: 140%;
+      background-color: $blueColor;
+      transition: all 0.3s;
+      pointer-events: none;
+    }
+    &:hover::before {
+      height: 120%;
+      top: 0;
+    }
+  }
 }
