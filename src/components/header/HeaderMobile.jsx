@@ -1,11 +1,11 @@
 import { useState } from "react";
-import logoColor from "../assets/images/logo-color.png";
-import logoFullname from "../assets/images/logo-fullname.png";
+import logoColor from "../../assets/images/logo-color.png";
+import logoFullname from "../../assets/images/logo-fullname.png";
 import HeaderIcons from "./HeaderIcons";
-import SvgBase from "./SvgBase.jsx";
-import closeIcon from "../assets/icons/close.svg";
-import menuIcon from "../assets/icons/menu.svg";
-import { NAV_ITEMS } from "../constants/constants";
+import SvgBase from "../SvgBase.jsx";
+import closeIcon from "../../assets/icons/close.svg";
+import menuIcon from "../../assets/icons/menu.svg";
+import { NAV_ITEMS } from "../../constants/constants.js";
 
 const HeaderMobile = () => {
   const [menuOpen, setMenuOpen] = useState(false);

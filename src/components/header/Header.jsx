@@ -1,7 +1,7 @@
-import logoColor from "../assets/images/logo-color.png";
-import logoFullname from "../assets/images/logo-fullname.png";
+import logoColor from "../../assets/images/logo-color.png";
+import logoFullname from "../../assets/images/logo-fullname.png";
 import HeaderIcons from "./HeaderIcons";
-import { NAV_ITEMS } from "../constants/constants";
+import { NAV_ITEMS } from "../../constants/constants";
 
 export default function Header() {
   return (

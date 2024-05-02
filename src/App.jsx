@@ -1,6 +1,6 @@
 import HomePage from "./pages/HomePage.jsx";
-import Header from "./components/Header.jsx";
-import HeaderMobile from "./components/HeaderMobile.jsx";
+import Header from "./components/header/Header.jsx";
+import HeaderMobile from "./components/header/HeaderMobile.jsx";
 
 export default function App() {
   return (

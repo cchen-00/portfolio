@@ -1,6 +1,6 @@
-import githubIcon from "../assets/icons/github_icon.png";
-import linkedinIcon from "../assets/icons/linkedin_icon.png";
-import behanceIcon from "../assets/icons/behance_icon.png";
+import githubIcon from "../../assets/icons/github_icon.png";
+import linkedinIcon from "../../assets/icons/linkedin_icon.png";
+import behanceIcon from "../../assets/icons/behance_icon.png";
 
 const HeaderIcons = () => {
   return (
