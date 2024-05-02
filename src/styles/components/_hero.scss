@@ -3,29 +3,23 @@
   height: 100vh;
   min-height: 780px;
   border-bottom: $borderColor 1px solid;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   overflow: hidden;
   &__textContainer {
-    // position: relative;
-    // transform: translate(-30%, -10%);
     position: absolute;
     left: 15%;
     top: 20%;
     padding: 16px;
     z-index: 1;
-    &::before {
-      content: "";
-      position: absolute;
-      top: -30px;
-      right: -100px;
-      width: $circleSize;
-      height: $circleSize;
-      border-radius: 50%;
-      background-color: $whiteColor;
-      z-index: -1;
-    }
+  }
+  &__circle {
+    position: absolute;
+    top: -30px;
+    right: -100px;
+    width: $circleSize;
+    height: $circleSize;
+    border-radius: 50%;
+    background-color: $whiteColor;
+    z-index: -2;
   }
   &__name {
     font-size: 1.6rem;

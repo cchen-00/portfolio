@@ -5,6 +5,7 @@ import plant from "../assets/images/plant.svg";
 import notebook from "../assets/images/notebook.svg";
 import coffee from "../assets/images/coffee.svg";
 import eyeGlasses from "../assets/images/eye_glasses.svg";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -34,6 +35,26 @@ const Hero = () => {
             />
           </button>
         </a>
+        <motion.div
+          className="hero__circle"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          whileHover={{
+            scale: 0.9,
+            transition: { duration: 0.8 },
+            type: "spring",
+          }}
+          transition={{
+            duration: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+            scale: {
+              type: "spring",
+              damping: 5,
+              stiffness: 100,
+              restDelta: 0.001,
+            },
+          }}
+        />
       </div>
 
       <SvgBase
