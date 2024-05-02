@@ -1,3 +1,30 @@
+// Mixin for media queries
+@mixin respond-to($media) {
+  @if $media == desktop {
+    @media (max-width: $mediaDesktop) {
+      @content;
+    }
+  }
+
+  @if $media == laptop {
+    @media (max-width: $mediaLaptop) {
+      @content;
+    }
+  }
+
+  @if $media == tablet {
+    @media (max-width: $mediaTablet) {
+      @content;
+    }
+  }
+
+  @if $media == mobile {
+    @media (max-width: $mediaMobile) {
+      @content;
+    }
+  }
+}
+
 @mixin flexCenter {
   display: flex;
   flex-direction: column;

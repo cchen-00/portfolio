@@ -17,6 +17,11 @@ body {
   overflow: auto;
   scroll-behavior: smooth;
   margin: 0;
+  @include respond-to(mobile) {
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
 }
 
 button {
