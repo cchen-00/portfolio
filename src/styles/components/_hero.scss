@@ -1,14 +1,20 @@
 .hero {
+  position: relative;
   height: 100vh;
   min-height: 780px;
   border-bottom: $borderColor 1px solid;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  overflow: hidden;
   &__textContainer {
-    position: relative;
+    // position: relative;
+    // transform: translate(-30%, -10%);
+    position: absolute;
+    left: 15%;
+    top: 20%;
     padding: 16px;
-    transform: translate(0, -10%);
+    z-index: 1;
     &::before {
       content: "";
       position: absolute;
@@ -43,6 +49,7 @@
     margin: 22px 0 16px 0;
     max-width: 460px;
   }
+
   &__button {
     position: relative;
     padding: 0;
@@ -69,5 +76,29 @@
       height: 120%;
       top: 0;
     }
+  }
+  &__arrowIcon {
+    margin-bottom: -4px;
+  }
+
+  &__laptopImg {
+    right: -280px;
+    top: -160px;
+  }
+  &__plantImg {
+    right: 220px;
+    top: -230px;
+  }
+  &__notebookImg {
+    right: -80px;
+    bottom: -90px;
+  }
+  &__coffeeImg {
+    left: 40px;
+    bottom: -60px;
+  }
+  &__eyeGlassesImg {
+    left: 20px;
+    top: 30px;
   }
 }
