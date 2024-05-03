@@ -76,22 +76,27 @@
   }
 
   &__laptopImg {
+    position: absolute;
     right: -280px;
     top: -160px;
   }
   &__plantImg {
+    position: absolute;
     right: 220px;
     top: -230px;
   }
   &__notebookImg {
+    position: absolute;
     right: -80px;
     bottom: -90px;
   }
   &__coffeeImg {
+    position: absolute;
     left: 40px;
     bottom: -60px;
   }
   &__eyeGlassesImg {
+    position: absolute;
     left: 20px;
     top: 30px;
   }

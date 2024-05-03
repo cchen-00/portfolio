@@ -1,14 +1,13 @@
-const SvgBase = ({
+const SvgImg = ({
   src,
   alt,
   width = "100%",
   height = "auto",
-  position = "initial",
   className,
   ...props
 }) => {
   return (
-    <div className={className} style={{ position: position }}>
+    <div className={className}>
       <img
         src={src}
         style={{ width: width, height: height }}
@@ -19,4 +18,4 @@ const SvgBase = ({
   );
 };
 
-export default SvgBase;
+export default SvgImg;

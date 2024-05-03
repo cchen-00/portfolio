@@ -2,9 +2,9 @@ import { useState } from "react";
 import logoColor from "../../assets/images/logo-color.png";
 import logoFullname from "../../assets/images/logo-fullname.png";
 import HeaderIcons from "./HeaderIcons";
-import SvgBase from "../SvgBase.jsx";
-import closeIcon from "../../assets/icons/close.svg";
-import menuIcon from "../../assets/icons/menu.svg";
+import SvgIcon from "../SvgIcon.jsx";
+import CloseIcon from "../../assets/icons/close.svg?react";
+import MenuIcon from "../../assets/icons/menu.svg?react";
 import { NAV_ITEMS } from "../../constants/constants.js";
 
 const HeaderMobile = () => {
@@ -17,10 +17,10 @@ const HeaderMobile = () => {
   return (
     <header className="navMobile">
       <a href="#hero">
-        <img src={logoColor} alt="logo EC" className="navMobile__logo" />
+        <img src={logoColor} alt="logo Ember Chen" className="navMobile__logo" />
         <img
           src={logoFullname}
-          alt="logo Ember Chens"
+          alt="logo Ember Chen"
           className="navMobile__topLogo"
         />
       </a>
@@ -33,12 +33,9 @@ const HeaderMobile = () => {
         }
         onClick={handleMenuClick}
       >
-        <SvgBase
-          src={menuOpen ? closeIcon : menuIcon}
-          width="24px"
-          height="24px"
-          alt="open and close menu icon"
-        />
+        <SvgIcon size="24px" title="open and close menu icon">
+          {menuOpen ? <CloseIcon /> : <MenuIcon />}
+        </SvgIcon>
       </button>
 
       <div

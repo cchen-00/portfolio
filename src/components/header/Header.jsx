@@ -10,7 +10,7 @@ export default function Header() {
         <img src={logoColor} alt="logo EC" className="nav__logo" />
         <img
           src={logoFullname}
-          alt="logo Ember Chens"
+          alt="logo Ember Chen"
           className="nav__topLogo"
         />
       </a>

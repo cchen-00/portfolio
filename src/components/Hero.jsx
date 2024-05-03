@@ -1,5 +1,6 @@
-import SvgBase from "./SvgBase.jsx";
-import arrowIcon from "../assets/icons/arrow_icon.svg";
+import SvgIcon from "./SvgIcon.jsx";
+import SvgImg from "./SvgImg.jsx";
+import ArrowIcon from "../assets/icons/arrow_icon.svg?react";
 import laptop from "../assets/images/laptop.svg";
 import plant from "../assets/images/plant.svg";
 import notebook from "../assets/images/notebook.svg";
@@ -23,16 +24,13 @@ const Hero = () => {
           creating cutting-edge, pixel-perfect, and beautiful UI/UX with clean
           code.
         </p>
+
         <a href="#projects">
           <button className="hero__button">
             View My Projects
-            <SvgBase
-              src={arrowIcon}
-              width="20px"
-              height="20px"
-              alt="arrow icon"
-              className="hero__arrowIcon"
-            />
+            <SvgIcon size="20px" title="arrow icon">
+              <ArrowIcon />
+            </SvgIcon>
           </button>
         </a>
         <motion.div
@@ -57,35 +55,35 @@ const Hero = () => {
         />
       </div>
 
-      <SvgBase
+      <SvgImg
         src={laptop}
         width="770px"
-        position="absolute"
         className="hero__laptopImg"
+        alt="laptop image"
       />
-      <SvgBase
+      <SvgImg
         src={plant}
         width="570px"
-        position="absolute"
         className="hero__plantImg"
+        alt="plant image"
       />
-      <SvgBase
+      <SvgImg
         src={notebook}
         width="790px"
-        position="absolute"
         className="hero__notebookImg"
+        alt="notebook image"
       />
-      <SvgBase
+      <SvgImg
         src={coffee}
         width="260px"
-        position="absolute"
         className="hero__coffeeImg"
+        alt="coffee image"
       />
-      <SvgBase
+      <SvgImg
         src={eyeGlasses}
         width="260px"
-        position="absolute"
         className="hero__eyeGlassesImg"
+        alt="eye glasses image"
       />
     </div>
   );

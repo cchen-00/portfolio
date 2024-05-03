@@ -1,6 +1,6 @@
-import codingIcon from "../assets/icons/coding_icon.svg";
-import designIcon from "../assets/icons/design_icon.svg";
-import SvgBase from "./SvgBase";
+import CodingIcon from "../assets/icons/coding_icon.svg?react";
+import DesignIcon from "../assets/icons/design_icon.svg?react";
+import SvgIcon from "./SvgIcon";
 import SkillProgress from "./SkillProgress";
 
 const Skills = () => {
@@ -22,6 +22,7 @@ const Skills = () => {
     { title: "Bootstrap", value: 60 },
     // { title: "Vuetify", value: 90 },
     { title: "Tailwind CSS", value: 30 },
+    { title: "Framer Motion", value: 30 },
   ];
 
   const designSkills = [
@@ -39,13 +40,10 @@ const Skills = () => {
     <div id="skills" className="skills row">
       <div className="col skills__codingCol">
         <div className="skills__title">
-          <SvgBase
-            src={codingIcon}
-            width="100px"
-            height="100px"
-            alt="coding icon"
-          />
-          Coding Skills
+          <SvgIcon size="100px" title="design icon">
+            <CodingIcon />
+          </SvgIcon>
+          <div>Coding Skills</div>
         </div>
         <p className="skills__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -66,14 +64,12 @@ const Skills = () => {
         </div>
       </div>
       <div className="col">
-        <div className="skills__title skills__titleDesign">
-          <SvgBase
-            src={designIcon}
-            width="100px"
-            height="100px"
-            alt="design icon"
-          />
-          Design Skills
+        <div className="skills__title ">
+          <SvgIcon size="100px" title="design icon">
+            <DesignIcon />
+          </SvgIcon>
+          <br />
+          <div className="skills__titleDesign">Design Skills</div>
         </div>
         <p className="skills__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
