@@ -3,6 +3,7 @@ import Header from "./components/header/Header.jsx";
 import HeaderMobile from "./components/header/HeaderMobile.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import ProgectPage from "./pages/ProgectPage.jsx";
+import Footer from "./components/Footer.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <HomePage /> },
@@ -17,6 +18,7 @@ export default function App() {
       <main>
         <RouterProvider router={router} />
       </main>
+      <Footer />
     </>
   );
 }
