@@ -1,4 +1,33 @@
-footer {
-  height: 200px;
+.footer {
+  text-align: center;
   border-top: $border;
+  padding: 40px 24px;
+
+  &__nav {
+    display: none;
+    @include respond-to(mobile) {
+      @include flexCenter;
+      margin-bottom: 24px;
+      gap: 30px;
+      a {
+        text-decoration: none;
+        color: $blackColor;
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__icons {
+    display: none;
+    @include respond-to(mobile) {
+      @include flexCenter;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__copyright {
+    font-size: 14px;
+    color: $greyColor;
+  }
 }
