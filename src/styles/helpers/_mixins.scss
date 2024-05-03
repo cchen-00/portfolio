@@ -34,7 +34,7 @@
 
 @mixin buttonStyle {
   background-color: $bgColor;
-  border: $borderColor 1px solid;
+  border: $border;
   border-radius: 5px;
   padding: 5px;
   margin: 5px;

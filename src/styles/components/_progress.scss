@@ -1,0 +1,23 @@
+.progress {
+  -webkit-appearance: none;
+  appearance: none;
+
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress::-webkit-progress-bar {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.progress::-webkit-progress-value {
+  background: linear-gradient(to right, darken($blueColor, 20%), $blueColor);
+  border-radius: 10px;
+}
+
+.progress::-moz-progress-bar {
+  background: linear-gradient(to right, darken($blueColor, 20%), $blueColor);
+  border-radius: 10px;
+}

@@ -1,6 +1,7 @@
 // Helpers
 @import "helpers/variables";
 @import "helpers/mixins";
+@import "helpers/grid";
 
 // Base
 @import "base/reset";
@@ -11,3 +12,4 @@
 @import "components/hero";
 @import "components/skills";
 @import "components/projects";
+@import "components/progress";

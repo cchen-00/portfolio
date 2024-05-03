@@ -1,0 +1,11 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+  @include respond-to(mobile) {
+    flex: 1 1 100%;
+  }
+}
