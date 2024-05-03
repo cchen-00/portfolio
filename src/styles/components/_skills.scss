@@ -30,9 +30,7 @@
     }
   }
   &__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flexWrap;
     gap: 28px;
     padding: 30px 24px 56px 24px;
   }

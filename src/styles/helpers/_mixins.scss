@@ -31,6 +31,12 @@
   align-items: center;
 }
 
+@mixin flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 @mixin buttonStyle {
   background-color: $bgColor;
   border: $border;

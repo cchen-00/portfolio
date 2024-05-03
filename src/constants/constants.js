@@ -16,3 +16,12 @@ export const NAV_ITEMS = [
     link: "#contact",
   },
 ];
+
+export const PROJECT_TAGS = [
+  "frontend",
+  "fullstack",
+  "UI/UX",
+  "branding",
+  "graphic design",
+  "packaging",
+];
