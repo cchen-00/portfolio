@@ -16,8 +16,12 @@ const HeaderMobile = () => {
 
   return (
     <header className="navMobile">
-      <a href="#hero">
-        <img src={logoColor} alt="logo Ember Chen" className="navMobile__logo" />
+      <a href="/#hero">
+        <img
+          src={logoColor}
+          alt="logo Ember Chen"
+          className="navMobile__logo"
+        />
         <img
           src={logoFullname}
           alt="logo Ember Chen"
@@ -45,7 +49,7 @@ const HeaderMobile = () => {
       >
         {NAV_ITEMS.map((item, index) => (
           <div key={index} className="navMobile__item">
-            <a href={item.link}>{item.name}</a>
+            <a href={`/${item.link}`}>{item.name}</a>
           </div>
         ))}
 

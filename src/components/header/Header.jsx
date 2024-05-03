@@ -6,7 +6,7 @@ import { NAV_ITEMS } from "../../constants/constants";
 export default function Header() {
   return (
     <header className="nav">
-      <a href="#hero">
+      <a href="/#hero">
         <img src={logoColor} alt="logo EC" className="nav__logo" />
         <img
           src={logoFullname}
@@ -18,7 +18,7 @@ export default function Header() {
       <div className="nav__menu">
         {NAV_ITEMS.map((item, index) => (
           <div key={index} className="nav__item">
-            <a href={item.link} className="nav__link">
+            <a href={`/${item.link}`} className="nav__link">
               {item.name}
             </a>
           </div>

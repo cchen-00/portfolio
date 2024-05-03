@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 const Projects = () => {
   return (
     <div id="projects" className="projects">
-      Projects
+      <Link to="/project/1">project</Link>
     </div>
   );
 };

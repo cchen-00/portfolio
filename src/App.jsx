@@ -1,6 +1,13 @@
-import HomePage from "./pages/HomePage.jsx";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Header from "./components/header/Header.jsx";
 import HeaderMobile from "./components/header/HeaderMobile.jsx";
+import HomePage from "./pages/HomePage.jsx";
+import ProgectPage from "./pages/ProgectPage.jsx";
+
+const router = createBrowserRouter([
+  { path: "/", element: <HomePage /> },
+  { path: "/project/:id", element: <ProgectPage /> },
+]);
 
 export default function App() {
   return (
@@ -8,7 +15,7 @@ export default function App() {
       <Header />
       <HeaderMobile />
       <main>
-        <HomePage />
+        <RouterProvider router={router} />
       </main>
     </>
   );
