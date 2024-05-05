@@ -13,7 +13,7 @@ const ProjectCard = ({ project }) => {
             />
           </div>
         </Link>
-        <p className="card__title">{project.name}</p>
+        {/* <p className="card__title">{project.name}</p> */}
         {/* <p>{project.description}</p> */}
         {/* <div>
           {project.tags.map((tag) => {

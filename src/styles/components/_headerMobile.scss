@@ -7,6 +7,11 @@
     left: 0;
     width: 100%;
     z-index: 2;
+    background: linear-gradient(
+      180deg,
+      $bgColor 20%,
+      rgba(red($bgColor), green($bgColor), blue($bgColor), 0) 100%
+    );
     &__logo {
       z-index: 3;
       position: relative;

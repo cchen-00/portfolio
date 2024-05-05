@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 531.01 300.25">
+  <defs>
+    <style>
+      .b {
+        fill: #7fd9e5;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <rect class="b" x="22" y="197.12" width="509" height="81.56"/>
+  <rect class="b" x="22" y="115.56" width="482.21" height="81.56"/>
+  <rect class="b" x="22" y="34" width="219.47" height="81.56"/>
+</svg>

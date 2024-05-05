@@ -6,6 +6,8 @@ import plant from "../assets/images/plant.svg";
 import notebook from "../assets/images/notebook.svg";
 import coffee from "../assets/images/coffee.svg";
 import eyeGlasses from "../assets/images/eye_glasses.svg";
+import heroText from "../assets/images/hero_text.svg";
+import bgColor from "../assets/images/bg_color_block.svg";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -13,11 +15,19 @@ const Hero = () => {
     <div id="hero" className="hero">
       <div className="hero__textContainer">
         <p className="hero__name">Ember Chen</p>
-        <h1 className="hero__title">
-          Web <br />
-          Developer <br />
-          &amp; Designer
-        </h1>
+
+        <div className="hero__title">
+          <SvgImg src={heroText} width="380px" alt="Web Developer Designer" />
+          <motion.div
+            className="hero__titleBg"
+            transition={{ duration: 2 }}
+            initial={{ width: 0 }}
+            animate={{ width: "380px" }}
+          >
+            <SvgImg src={bgColor} width="380px" alt="background color block" />
+          </motion.div>
+        </div>
+
         <p className="hero__description">
           Hi, I am a front-end engineer with 4 years of experience, plus 2 years
           design background in advertising agencies. I'm passionate about
@@ -27,12 +37,13 @@ const Hero = () => {
 
         <a href="#projects">
           <button className="hero__button">
-            View My Projects
+            View Projects
             <SvgIcon size="20px" title="arrow icon">
               <ArrowIcon />
             </SvgIcon>
           </button>
         </a>
+        
         <motion.div
           className="hero__circle"
           initial={{ opacity: 0, scale: 0.5 }}
