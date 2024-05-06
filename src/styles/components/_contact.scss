@@ -1,3 +1,44 @@
 .contact {
-    min-height: 500px;
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 80px 30px 80px 30px;
+  &__text {
+    h2 {
+      font-size: 64px;
+      line-height: 0.8;
+      font-weight: 800;
+      color: $blackColor;
+      margin: 0;
+      display: inline-block;
+      &::after {
+        content: "";
+        display: block;
+        width: calc(100% + 24px);
+        height: 28px;
+        background-color: $blueColor;
+        margin-top: -20px;
+        margin-left: 12px;
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 26px;
+      margin-top: 20px;
+      color: $greyColor;
+    }
+  }
+  &__form {
+    margin-top: 40px;
+  }
+  &__img {
+    position: absolute;
+    z-index: -1;
+    bottom: 20px;
+    right: -240px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
 }
