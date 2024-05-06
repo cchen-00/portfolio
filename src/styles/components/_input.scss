@@ -1,0 +1,40 @@
+.input {
+  position: relative;
+  display: block;
+  margin-bottom: 12px;
+  label {
+    font-size: 16px;
+    color: $greyColor;
+  }
+  &__text {
+    padding: 6px 0 0 0;
+    outline: none;
+  }
+  input {
+    padding: 8px;
+    width: 100%;
+    border: $greyColor 1px solid;
+    outline: none;
+    font-size: 16px;
+    color: $blackColor;
+    margin: 0;
+  }
+
+  textarea {
+    padding: 8px;
+    width: 100%;
+    border: $greyColor 1px solid;
+    outline: none;
+    font-size: 16px;
+    color: $blackColor;
+    margin: 0;
+    margin-bottom: -4px;
+  }
+
+  &__warning {
+    font-size: 12px;
+    color: $redColor;
+    height: 14px;
+    padding-top: 4px;
+  }
+}
