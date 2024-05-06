@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Input from "./Input";
-import SvgImg from "./SvgImg.jsx";
+import Input from "./baseComponents/Input.jsx";
+import SvgImg from "./baseComponents/SvgImg.jsx";
 import coffee from "../assets/images/coffee.svg";
 
 const validateEmail = (email) => {

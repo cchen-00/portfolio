@@ -1,5 +1,5 @@
-import SvgIcon from "./SvgIcon.jsx";
-import SvgImg from "./SvgImg.jsx";
+import SvgIcon from "./baseComponents/SvgIcon.jsx";
+import SvgImg from "./baseComponents/SvgImg.jsx";
 import ArrowIcon from "../assets/icons/arrow_icon.svg?react";
 import laptop from "../assets/images/laptop.svg";
 import plant from "../assets/images/plant.svg";

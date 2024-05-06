@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import SvgImg from "./SvgImg";
+import SvgImg from "./baseComponents/SvgImg";
 import projectsText from "../assets/images/projects_title.svg";
 import PROJECTS from "../constants/projects";
 import { PROJECT_TAGS } from "../constants/constants";

@@ -1,6 +1,6 @@
 import CodingIcon from "../assets/icons/coding_icon.svg?react";
 import DesignIcon from "../assets/icons/design_icon.svg?react";
-import SvgIcon from "./SvgIcon";
+import SvgIcon from "./baseComponents/SvgIcon";
 import SkillProgress from "./SkillProgress";
 
 const Skills = () => {
