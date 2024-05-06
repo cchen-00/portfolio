@@ -2,7 +2,7 @@ import { useState } from "react";
 import logoColor from "../../assets/images/logo-color.png";
 import logoFullname from "../../assets/images/logo-fullname.png";
 import HeaderIcons from "./HeaderIcons";
-import SvgIcon from "../SvgIcon.jsx";
+import SvgIcon from "../baseComponents/SvgIcon.jsx";
 import CloseIcon from "../../assets/icons/close.svg?react";
 import MenuIcon from "../../assets/icons/menu.svg?react";
 import { NAV_ITEMS } from "../../constants/constants.js";

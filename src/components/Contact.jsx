@@ -1,7 +1,10 @@
 import { useState } from "react";
 import Input from "./baseComponents/Input.jsx";
+import Button from "./baseComponents/Button.jsx";
 import SvgImg from "./baseComponents/SvgImg.jsx";
 import coffee from "../assets/images/coffee.svg";
+import HeaderIcons from "./header/HeaderIcons.jsx";
+import Title from "./baseComponents/Title.jsx";
 
 const validateEmail = (email) => {
   const re =
@@ -21,14 +24,17 @@ const Contact = () => {
   return (
     <div id="contact">
       <div className="contact">
-        <div class="contact__text">
-          <h2>Contact</h2>
-          <p>
+        <div>
+          <Title text="Contact" size="lg" />
+          <p className="contact__text">
             Whether you're interested in collaborating on a project, seeking
             insights into my work, or simply want to connect, I'm always happy
             to hear from you. Feel free to reach out via email, social media, or
             leave a message below.
           </p>
+          <div className="contact__links">
+            <HeaderIcons />
+          </div>
         </div>
 
         <div className="contact__form">
@@ -50,7 +56,9 @@ const Contact = () => {
               onChange={setMessage}
               required
             />
-            <button type="submit">Submit</button>
+            <Button type="submit" className="contact__btn">
+              Submit
+            </Button>
           </form>
         </div>
         <SvgImg

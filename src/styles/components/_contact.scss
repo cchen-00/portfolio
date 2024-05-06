@@ -5,28 +5,18 @@
   margin: 0 auto;
   padding: 80px 30px 80px 30px;
   &__text {
-    h2 {
-      font-size: 64px;
-      line-height: 0.8;
-      font-weight: 800;
-      color: $blackColor;
-      margin: 0;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 20px;
+    color: $greyColor;
+  }
+  &__links {
+    display: flex;
+    gap: 32px;
+    a {
       display: inline-block;
-      &::after {
-        content: "";
-        display: block;
-        width: calc(100% + 24px);
-        height: 28px;
-        background-color: $blueColor;
-        margin-top: -20px;
-        margin-left: 12px;
-      }
-    }
-    p {
-      font-size: 18px;
-      line-height: 26px;
-      margin-top: 20px;
-      color: $greyColor;
+      width: 48px;
+      height: 48px;
     }
   }
   &__form {
@@ -40,5 +30,8 @@
     width: 400px;
     object-fit: cover;
     border-radius: 50%;
+  }
+  &__btn {
+    margin-top: 6px;
   }
 }

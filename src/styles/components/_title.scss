@@ -1,0 +1,32 @@
+.title {
+  position: relative;
+  display: inline-block;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: $blackColor;
+  &::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 110%;
+    height: 28px;
+    top: 28px;
+    left: 12px;
+    background-color: $blueColor;
+  }
+  &--small {
+    font-size: 32px;
+    &::after {
+      height: 16px;
+      top: 18px;
+    }
+  }
+  &--large {
+    font-size: 64px;
+    &::after {
+      height: 36px;
+      top: 36px;
+    }
+  }
+}
