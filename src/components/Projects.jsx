@@ -23,17 +23,22 @@ const Projects = () => {
           );
         })}
       </div>
-      {/* <div className="projects__subTitle">
+      <div className="projects__subTitle">
         Coding
-      </div> */}
+      </div>
       <div className="projects__container">
         {PROJECTS.map((project) => (
           <ProjectCard key={`project${project.id}`} project={project} />
         ))}
       </div>
-      {/* <div className="projects__subTitle">
+      <div className="projects__subTitle">
         Design
-      </div> */}
+      </div>
+      <div className="projects__container">
+        {PROJECTS.map((project) => (
+          <ProjectCard key={`project${project.id}`} project={project} />
+        ))}
+      </div>
     </div>
   );
 };

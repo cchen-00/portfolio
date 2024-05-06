@@ -11,20 +11,12 @@ const ProjectCard = ({ project }) => {
               alt="Project Poster"
               className="card__img"
             />
+            <div className="card__textWrapper">
+              <div className="card__title">{project.name}</div>
+              <div className="card__subTitle">{project.subTitle}</div>
+            </div>
           </div>
         </Link>
-        {/* <p className="card__title">{project.name}</p> */}
-        {/* <p>{project.description}</p> */}
-        {/* <div>
-          {project.tags.map((tag) => {
-            return (
-              <span key={tag} className="tag">
-                {tag}
-                {", "}
-              </span>
-            );
-          })}
-        </div> */}
       </div>
     </div>
   );
