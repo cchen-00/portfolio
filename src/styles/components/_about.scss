@@ -26,6 +26,22 @@
   &__content {
     @include contentText;
   }
+  &__subtitle {
+    font-size: 18px;
+    margin-bottom: -6px;
+    &::after {
+      content: "";
+      display: block;
+      width: 130px;
+      height: 4px;
+      background-color: $blueColor;
+    }
+  }
+  &__buttonIcon {
+    margin-left: 12px;
+    margin-bottom: -5px;
+  }
+
   &__img {
     position: absolute;
     top: 28px;

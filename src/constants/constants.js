@@ -27,3 +27,6 @@ export const PROJECT_TAGS = [
   "packaging",
   "illustration",
 ];
+
+export const RESUME_LINK =
+  "https://docs.google.com/document/d/1ZMVPyMWlLS7NCyG2dFX868ScSSGaHGMmbmJsbb3z3WQ/edit?usp=sharing";

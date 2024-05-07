@@ -1,5 +1,9 @@
 import Title from "./baseComponents/Title";
 import chenImg from "../assets/images/chen.png";
+import Button from "./baseComponents/Button";
+import SvgIcon from "./baseComponents/SvgIcon";
+import ArrowIcon from "../assets/icons/arrow_icon.svg?react";
+import { RESUME_LINK } from "../constants/constants";
 
 const About = () => {
   return (
@@ -29,7 +33,7 @@ const About = () => {
               understand some back-end stuff, and even contribute design ideas?
               I'm your ideal candidate.
             </p> */}
-            <p>Key Highlights:</p>
+            <div className="about__subtitle">Key Highlights:</div>
             <ul>
               <li>
                 4+ years of experience building stunning front-end interfaces.
@@ -46,6 +50,18 @@ const About = () => {
               </li>
               <li>Excellent communication and collaboration skills.</li>
             </ul>
+            <a href={RESUME_LINK} target="_blank">
+              <Button>
+                My Resume
+                <SvgIcon
+                  size="26px"
+                  title="Arrow Icon"
+                  className="about__buttonIcon"
+                >
+                  <ArrowIcon />
+                </SvgIcon>
+              </Button>
+            </a>
             <p>
               I am currently seeking full-time/part-time opportunities. Feel
               free to reach out.
