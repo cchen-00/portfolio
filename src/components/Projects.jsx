@@ -9,7 +9,7 @@ const Projects = () => {
     <div id="projects" className="projects">
       <SvgImg
         src={projectsText}
-        width="45%"
+        width="260px"
         alt="Projects"
         className="projects__title"
       />

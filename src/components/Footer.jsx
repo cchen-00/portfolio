@@ -18,7 +18,9 @@ const Footer = () => {
       </div>
 
       <div className="footer__copyright">
-        © {currentYear} Ember Chen. All Rights Reserved.
+        <b>Designed and Developed by Ember Chen</b>
+        <br />
+        Copyright © {currentYear}. All Rights Reserved.
       </div>
     </footer>
   );

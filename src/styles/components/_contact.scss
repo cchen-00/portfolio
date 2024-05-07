@@ -1,9 +1,14 @@
 .contact {
   position: relative;
-  width: 80%;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 80px 30px 80px 30px;
+  width: 100%;
+  overflow: hidden;
+  &__container {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 80px 30px 80px 30px;
+  }
   &__text {
     @include contentText;
   }

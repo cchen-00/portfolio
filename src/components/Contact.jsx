@@ -22,8 +22,8 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact">
-      <div className="contact">
+    <div id="contact" className="contact">
+      <div className="contact__container">
         <div>
           <Title text="Contact" size="lg" />
           <p className="contact__text">

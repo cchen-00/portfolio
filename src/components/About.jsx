@@ -39,8 +39,7 @@ const About = () => {
                 4+ years of experience building stunning front-end interfaces.
               </li>
               <li>
-                Expertise in HTML, CSS, JavaScript, React, Vue, and Tailwind
-                CSS.
+                Expertise in HTML, CSS, JavaScript, React, Vue, and SCSS.
               </li>
               <li>
                 Experience with back-end technologies like Node.js and MongoDB.
@@ -88,8 +87,8 @@ const About = () => {
                   isn't my thing.
                 </li>
                 <li>
-                  My favorite ways to recharge are spending time alone, drawing,
-                  drinking coffee, and soaking up the sun.
+                  My favorite ways to recharge are drawing, drinking coffee, and
+                  soaking up the sun.
                 </li>
               </ul>
               <div className="about__img">

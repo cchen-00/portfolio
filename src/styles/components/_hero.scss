@@ -1,15 +1,22 @@
 .hero {
   position: relative;
   height: 100vh;
+  width: 100%;
   min-height: 780px;
   border-bottom: $border;
   overflow: hidden;
   &__textContainer {
+    z-index: 1;
     position: absolute;
     left: 15%;
     top: 20%;
     padding: 16px;
-    z-index: 1;
+    @include respond-to(tablet) {
+      left: 10%;
+    }
+    @include respond-to(mobile) {
+      left: 28px;
+    }
   }
   &__circle {
     position: absolute;
@@ -61,7 +68,7 @@
     &::before {
       content: "";
       position: absolute;
-      left: 16px;
+      left: 12px;
       top: 40%;
       z-index: -1;
       height: 80%;
@@ -83,25 +90,52 @@
     position: absolute;
     right: -280px;
     top: -160px;
+    @include respond-to(mobile) {
+      top: -360px;
+    }
   }
   &__plantImg {
     position: absolute;
     right: 220px;
     top: -230px;
+    @include respond-to(tablet) {
+      top: -300px;
+    }
+    @include respond-to(mobile) {
+      top: -230px;
+    }
   }
   &__notebookImg {
     position: absolute;
     right: -80px;
     bottom: -90px;
+    @include respond-to(tablet) {
+      right: -100px;
+      bottom: -200px;
+    }
+    @include respond-to(mobile) {
+      right: -30px;
+      bottom: -220px;
+    }
   }
   &__coffeeImg {
     position: absolute;
     left: 40px;
     bottom: -60px;
+    @include respond-to(tablet) {
+      left: -100px;
+    }
+    @include respond-to(mobile) {
+      display: none;
+    }
   }
   &__eyeGlassesImg {
     position: absolute;
     left: 20px;
     top: 30px;
+
+    @include respond-to(tablet) {
+      display: none;
+    }
   }
 }

@@ -46,12 +46,10 @@ const Skills = () => {
           <div>Coding Skills</div>
         </div>
         <p className="skills__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+          Adept front-end developer with expertise in Vue.js and React.js,
+          currently expanding my skillset to encompass back-end development.
+          Possess a strong foundation in translating UI/UX designs into
+          functional user interfaces.
         </p>
         <div className="skills__container">
           {codingSkills.map((skill, index) => (
@@ -72,12 +70,10 @@ const Skills = () => {
           <div className="skills__titleDesign">Design Skills</div>
         </div>
         <p className="skills__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+          Versatile designer with experience in graphic and television ad
+          campaigns, freelance graphic design, and occasional web design
+          projects. Front-end dev background strengthens my UI/UX understanding
+          and communication, ensuring smooth implementation.
         </p>
         <div className="skills__container">
           {designSkills.map((skill, index) => (
