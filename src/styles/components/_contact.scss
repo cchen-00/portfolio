@@ -5,10 +5,7 @@
   margin: 0 auto;
   padding: 80px 30px 80px 30px;
   &__text {
-    font-size: 18px;
-    line-height: 26px;
-    margin-top: 20px;
-    color: $greyColor;
+    @include contentText;
   }
   &__links {
     display: flex;

@@ -48,3 +48,19 @@
     background-color: darken($buttonColor, 10%);
   }
 }
+
+@mixin contentText {
+  color: $darkerGreyColor;
+  font-size: 17px;
+  line-height: 26px;
+  p {
+    margin-bottom: 20px;
+  }
+  ul {
+    li {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 6px;
+    }
+  }
+}
