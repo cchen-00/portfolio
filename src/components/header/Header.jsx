@@ -1,6 +1,6 @@
 import logoColor from "../../assets/images/logo-color.png";
 import logoFullname from "../../assets/images/logo-fullname.png";
-import HeaderIcons from "./HeaderIcons";
+import SocialMediaIcons from "../SocialMediaIcons";
 import { NAV_ITEMS } from "../../constants/constants";
 
 export default function Header() {
@@ -26,7 +26,7 @@ export default function Header() {
       </div>
 
       <div className="nav__icons">
-        <HeaderIcons />
+        <SocialMediaIcons />
       </div>
     </header>
   );

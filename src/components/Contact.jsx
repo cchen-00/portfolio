@@ -3,7 +3,7 @@ import Input from "./baseComponents/Input.jsx";
 import Button from "./baseComponents/Button.jsx";
 import SvgImg from "./baseComponents/SvgImg.jsx";
 import coffee from "../assets/images/coffee.svg";
-import HeaderIcons from "./header/HeaderIcons.jsx";
+import SocialMediaIcons from "./SocialMediaIcons.jsx";
 import Title from "./baseComponents/Title.jsx";
 
 const validateEmail = (email) => {
@@ -33,7 +33,7 @@ const Contact = () => {
             leave a message below.
           </p>
           <div className="contact__links">
-            <HeaderIcons />
+            <SocialMediaIcons />
           </div>
         </div>
 

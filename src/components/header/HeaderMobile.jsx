@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logoColor from "../../assets/images/logo-color.png";
 import logoFullname from "../../assets/images/logo-fullname.png";
-import HeaderIcons from "./HeaderIcons";
+import SocialMediaIcons from "../SocialMediaIcons.jsx";
 import SvgIcon from "../baseComponents/SvgIcon.jsx";
 import CloseIcon from "../../assets/icons/close.svg?react";
 import MenuIcon from "../../assets/icons/menu.svg?react";
@@ -54,7 +54,7 @@ const HeaderMobile = () => {
         ))}
 
         <div className="navMobile__icons">
-          <HeaderIcons />
+          <SocialMediaIcons />
         </div>
       </div>
 

@@ -1,4 +1,4 @@
-import HeaderIcons from "./header/HeaderIcons";
+import SocialMediaIcons from "./SocialMediaIcons";
 import { NAV_ITEMS } from "../constants/constants";
 
 const Footer = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
         ))}
       </div>
       <div className="footer__icons">
-        <HeaderIcons />
+        <SocialMediaIcons />
       </div>
 
       <div className="footer__copyright">

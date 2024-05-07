@@ -1,10 +1,10 @@
-import githubIcon from "../../assets/icons/github_icon.png";
-import linkedinIcon from "../../assets/icons/linkedin_icon.png";
-import behanceIcon from "../../assets/icons/behance_icon.png";
-import EmailIcon from "../../assets/icons/email_icon.svg?react";
-import SvgIcon from "../baseComponents/SvgIcon";
+import githubIcon from "../assets/icons/github_icon.png";
+import linkedinIcon from "../assets/icons/linkedin_icon.png";
+import behanceIcon from "../assets/icons/behance_icon.png";
+import EmailIcon from "../assets/icons/email_icon.svg?react";
+import SvgIcon from "./baseComponents/SvgIcon";
 
-const HeaderIcons = () => {
+const SocialMediaIcons = () => {
   return (
     <>
       <a
@@ -37,4 +37,4 @@ const HeaderIcons = () => {
   );
 };
 
-export default HeaderIcons;
+export default SocialMediaIcons;
