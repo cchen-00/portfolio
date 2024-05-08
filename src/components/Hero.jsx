@@ -30,7 +30,7 @@ const Hero = () => {
 
         <p className="hero__description">
           Hi, I am a front-end engineer with 4 years of experience, plus 2 years
-          design background in advertising agencies. I'm passionate about
+          of design background in advertising agencies. I'm passionate about
           creating cutting-edge, pixel-perfect, and beautiful UI/UX with clean
           code.
         </p>
@@ -43,7 +43,7 @@ const Hero = () => {
             </SvgIcon>
           </button>
         </a>
-        
+
         <motion.div
           className="hero__circle"
           initial={{ opacity: 0, scale: 0.5 }}

@@ -8,23 +8,29 @@
   &__tags {
     @include flexWrap;
     padding: 0 32px 12px 32px;
-    button {
-      padding: 8px 14px;
-      font-size: 16px;
-      margin: 0 8px 16px 8px;
-      border: none;
-      border-radius: 20px;
-      color: $blackColor;
-      border: $blackColor 1.5px solid;
-      text-transform: capitalize;
-      &:hover {
-        background-color: $blueColor;
-      }
-      @include respond-to(mobile) {
-        padding: 6px 12px;
-        font-size: 14px;
-        margin: 0 6px 12px 6px;
-      }
+  }
+  &__tagBtn {
+    padding: 8px 14px;
+    font-size: 16px;
+    margin: 0 8px 16px 8px;
+    border: none;
+    border-radius: 20px;
+    color: $blackColor;
+    border: $blackColor 1.5px solid;
+    text-transform: capitalize;
+    &--active {
+      background-color: $blueColor;
+    }
+    &:active {
+      transform: scale(0.95);
+    }
+    &:hover {
+      background-color: $blueColor;
+    }
+    @include respond-to(mobile) {
+      padding: 6px 12px;
+      font-size: 14px;
+      margin: 0 6px 12px 6px;
     }
   }
   &__subTitle {
@@ -35,6 +41,7 @@
     margin: 0 auto 16px auto;
     font-size: 20px;
     font-weight: 700;
+    text-transform: capitalize;
     color: $darkerGreyColor;
     &::after {
       content: "";
