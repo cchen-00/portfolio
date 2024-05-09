@@ -37,15 +37,28 @@
   justify-content: center;
 }
 
-@mixin buttonStyle {
-  background-color: $bgColor;
-  border: $border;
-  border-radius: 5px;
-  padding: 5px;
-  margin: 5px;
-  cursor: pointer;
-  &:hover {
-    background-color: darken($buttonColor, 10%);
+@mixin linkStyle {
+  padding: 0;
+  color: $blackColor;
+  font-size: 1.3rem;
+  transition: all 0.3s;
+  @include flexCenter;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 40%;
+    z-index: -1;
+    height: 80%;
+    width: calc(100% + 18px);
+    background-color: $blueColor;
+    transition: all 0.3s;
+    pointer-events: none;
+  }
+  &:hover::before {
+    height: 120%;
+    top: 0;
   }
 }
 

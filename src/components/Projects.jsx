@@ -3,21 +3,16 @@ import ProjectCard from "./ProjectCard";
 import SvgImg from "./baseComponents/SvgImg";
 import projectsText from "../assets/images/projects_title.svg";
 import PROJECTS from "../constants/projects";
+import SvgIcon from "./baseComponents/SvgIcon";
+import ArrowIcon from "../assets/icons/arrow_icon.svg?react";
 import { PROJECT_TAGS } from "../constants/constants";
+import { LINKS } from "../constants/constants";
 
 const Projects = () => {
-  const [selectedTags, setSelectedTags] = useState([]);
+  const [selectedTag, setSelectedTag] = useState("all projects");
 
   const handleTagClick = (tag) => {
-    if (tag === "all projects") {
-      setSelectedTags([]);
-    } else {
-      if (selectedTags.includes(tag)) {
-        setSelectedTags(selectedTags.filter((t) => t !== tag));
-      } else {
-        setSelectedTags([...selectedTags, tag]);
-      }
-    }
+    setSelectedTag(tag);
   };
 
   const PROJECT_TYPES = ["coding", "design"];
@@ -26,8 +21,8 @@ const Projects = () => {
     return PROJECTS.filter(
       (project) =>
         project.type.toLowerCase() === type.toLowerCase() &&
-        (selectedTags.length === 0 ||
-          project.tags.some((tag) => selectedTags.includes(tag)))
+        (selectedTag === "all projects" ||
+          project.tags.some((tag) => selectedTag === tag))
     ).map((project) => (
       <ProjectCard key={`project${project.id}`} project={project} />
     ));
@@ -48,7 +43,7 @@ const Projects = () => {
             <button
               key={tag}
               className={`projects__tagBtn ${
-                selectedTags.includes(tag) ? "projects__tagBtn--active" : ""
+                selectedTag === tag ? "projects__tagBtn--active" : ""
               }`}
               onClick={() => handleTagClick(tag)}
             >
@@ -64,6 +59,17 @@ const Projects = () => {
           <div className="projects__container">{renderProjectCards(type)}</div>
         </div>
       ))}
+
+      {selectedTag === "all projects" && (
+        <div className="projects__linkRow">
+          <a href={LINKS.behance} className="projects__link" target="_blank">
+            More designs on Behance
+            <SvgIcon size="20px" title="arrow icon">
+              <ArrowIcon />
+            </SvgIcon>
+          </a>
+        </div>
+      )}
     </div>
   );
 };

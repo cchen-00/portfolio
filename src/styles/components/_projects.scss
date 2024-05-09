@@ -25,7 +25,7 @@
       transform: scale(0.95);
     }
     &:hover {
-      background-color: $blueColor;
+      background-color: $whiteColor;
     }
     @include respond-to(mobile) {
       padding: 6px 12px;
@@ -64,5 +64,18 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 32px;
+  }
+
+  &__linkRow {
+    padding: 16px 0;
+    @include flexCenter;
+  }
+
+  &__link {
+    position: absolute;
+    @include linkStyle;
+    svg {
+      margin-left: 6px;
+    }
   }
 }

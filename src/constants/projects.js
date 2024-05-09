@@ -4,6 +4,7 @@ import p2img1 from "../assets/images/projects/p2_cover.png";
 import p4img1 from "../assets/images/projects/p4_cover.png";
 import p5img1 from "../assets/images/projects/p5_cover.png";
 import p6img1 from "../assets/images/projects/p6_cover.png";
+import { LINKS } from "./constants";
 
 const PROJECTS = [
   {
@@ -92,7 +93,7 @@ const PROJECTS = [
     tags: ["frontend", "UI/UX", "branding"],
     github: "https://github.com/cchen-00/portfolio",
     link: "",
-    behance: "https://www.behance.net/cchengraphfe83",
+    behance: LINKS.behance,
     description: "Frontend React project / Personal branding project.",
     content: [
       { type: "img", value: p2img1 },
@@ -110,7 +111,7 @@ const PROJECTS = [
     subTitle: "Main designer for the event",
     poster: p4img1,
     tags: ["branding", "graphic design", "illustration"],
-    behance: "https://www.behance.net/cchengraphfe83",
+    behance: LINKS.behance,
     link: "https://www.zgzg.io/",
     description: "",
     content: [
@@ -126,7 +127,7 @@ const PROJECTS = [
     subTitle: "Branding Project",
     poster: p5img1,
     tags: ["branding", "graphic design"],
-    behance: "https://www.behance.net/cchengraphfe83",
+    behance: LINKS.behance,
     link: "",
     description: "",
     content: [
@@ -142,7 +143,7 @@ const PROJECTS = [
     subTitle: "",
     poster: p6img1,
     tags: ["icons", "UI/UX"],
-    behance: "https://www.behance.net/cchengraphfe83",
+    behance: LINKS.behance,
     link: "",
     description: "",
     content: [
