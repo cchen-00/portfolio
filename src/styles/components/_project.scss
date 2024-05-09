@@ -1,12 +1,42 @@
 .project {
   min-height: 100vh;
   &__container {
-    padding: 60px 32px;
+    padding: 90px 32px;
     max-width: $mediaTablet;
     margin: 0 auto;
+    p {
+      @include contentText;
+    }
     img {
       width: 100%;
+      max-width: 500px;
       object-fit: cover;
     }
+  }
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    gap: 8px;
+  }
+  &__tag {
+    color: $blackColor;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: $blackColor 1px solid;
+    text-transform: capitalize;
+  }
+  &__description {
+    margin-top: 32px;
+  }
+  &__links {
+    margin: 32px 0;
+  }
+  &__link {
+    color: $blackColor;
+    font-size: 19px;
+    text-decoration: underline;
+    text-decoration-color: $blueColor;
   }
 }

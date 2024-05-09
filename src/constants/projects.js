@@ -5,9 +5,6 @@ import p4img1 from "../assets/images/projects/p4_cover.png";
 import p5img1 from "../assets/images/projects/p5_cover.png";
 import p6img1 from "../assets/images/projects/p6_cover.png";
 
-const text =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-
 const PROJECTS = [
   {
     id: 0,
@@ -18,11 +15,20 @@ const PROJECTS = [
     tags: ["frontend"],
     gitHub: "",
     link: "https://www.deephow.com/",
-    description: text,
+    description:
+      "DeepHow is an award-winning AI-powered, video-centric platform for skilled workforce training.",
     content: [
-      { type: "text", value: "This is the first paragraph of project 0." },
       { type: "img", value: p0img1 },
-      { type: "text", value: "This is the second paragraph of project 0." },
+      {
+        type: "text",
+        value:
+          "As the first front-end developer, I played a key role in building the MVP and establishing the technical foundation for this project. I implemented new features using a modern tech stack including HTML/CSS, JavaScript, Vue.js, Vuex, and Vuetify.  Later, I took ownership of critical modules like the Video Player, Navigator, Skills, and User Profile, ensuring their ongoing optimization, maintenance, and seamless cross-device compatibility across desktop and mobile.  I also actively collaborated with designers to refine the UI/UX of new features. ",
+      },
+      {
+        type: "text",
+        value:
+          " If you'd like to learn more about the project, feel free to contact me.",
+      },
     ],
   },
   {
@@ -32,13 +38,50 @@ const PROJECTS = [
     subTitle: "Fullstack Project",
     poster: p1img1,
     tags: ["frontend", "fullstack", "UI/UX"],
-    gitHub: "https://github.com/cchen-00/portfolio",
-    link: "https://petshop-38o7.onrender.com/",
-    description: text,
+    gitHub: "https://github.com/cchen-00/petshop",
+    demoLink: "https://petshop-38o7.onrender.com/",
+    description:
+      "An eCommerce shop using the MERN stack along with Redux Toolkit.",
     content: [
-      { type: "text", value: "This is the first paragraph of project 1." },
-      { type: "img", value: p2img1 },
-      { type: "text", value: "This is the second paragraph of project 1." },
+      { type: "img", value: p1img1 },
+      {
+        type: "text",
+        value: "Admin test account:",
+      },
+      {
+        type: "text",
+        value: "Email: admin@123.com",
+      },
+      {
+        type: "text",
+        value: "Password:123456",
+      },
+      {
+        type: "text",
+        value:
+          "I built this comprehensive e-commerce application from scratch, handling both front-end and back-end development. My expertise includes:",
+      },
+
+      {
+        type: "text",
+        value:
+          "Full-Stack Development: MERN stack for architecture, Redux Toolkit for state management, data modeling, MongoDB database, RESTful APIs, custom database seeder.",
+      },
+      {
+        type: "text",
+        value:
+          "Front-End Development: UI/UX design, React.js for dynamic frontend, Redux Toolkit for state management.",
+      },
+      {
+        type: "text",
+        value:
+          "E-commerce Features: Shopping cart, product reviews, product carousel, pagination, search, user profile, order history, admin panel, product management, user management, order management, secure checkout.",
+      },
+      {
+        type: "text",
+        value:
+          "UI/UX Design: I designed the website's UI/UX with Bootstrap components and created the logo and banners using Adobe Illustrator and Photoshop.",
+      },
     ],
   },
   {
@@ -47,14 +90,18 @@ const PROJECTS = [
     name: "Personal Website",
     subTitle: "Frontend React Project",
     poster: p2img1,
-    tags: ["frontend", "fullstack", "UI/UX"],
+    tags: ["frontend", "UI/UX", "branding"],
     gitHub: "https://github.com/cchen-00/portfolio",
     link: "",
-    description: text,
+    behance: "https://www.behance.net/cchengraphfe83",
+    description: "Frontend React project / Personal branding project.",
     content: [
-      { type: "text", value: "This is the first paragraph of project 1." },
       { type: "img", value: p2img1 },
-      { type: "text", value: "This is the second paragraph of project 1." },
+      {
+        type: "text",
+        value:
+          "This website is designed with Adobe Illustrator and Photoshop. Built with Vite and React. Used SASS to format the Style",
+      },
     ],
   },
   {
@@ -66,11 +113,11 @@ const PROJECTS = [
     tags: ["branding", "graphic design", "illustration"],
     behance: "https://www.behance.net/cchengraphfe83",
     link: "https://www.zgzg.io/",
-    description: text,
+    description: "",
     content: [
-      { type: "text", value: "This is the first paragraph of project 2." },
-      { type: "img", value: p2img1 },
-      { type: "text", value: "This is the second paragraph of project 2." },
+      { type: "img", value: p4img1 },
+      // { type: "text", value: "This is the first paragraph of project 2." },
+      // { type: "text", value: "This is the second paragraph of project 2." },
     ],
   },
   {
@@ -82,11 +129,11 @@ const PROJECTS = [
     tags: ["branding", "graphic design"],
     behance: "https://www.behance.net/cchengraphfe83",
     link: "",
-    description: text,
+    description: "",
     content: [
-      { type: "text", value: "This is the first paragraph of project 2." },
-      { type: "img", value: p2img1 },
-      { type: "text", value: "This is the second paragraph of project 2." },
+      { type: "img", value: p5img1 },
+      // { type: "text", value: "This is the first paragraph of project 2." },
+      // { type: "text", value: "This is the second paragraph of project 2." },
     ],
   },
   {
@@ -98,11 +145,11 @@ const PROJECTS = [
     tags: ["icons", "UI/UX"],
     behance: "https://www.behance.net/cchengraphfe83",
     link: "",
-    description: text,
+    description: "",
     content: [
-      { type: "text", value: "This is the first paragraph of project 2." },
-      { type: "img", value: p2img1 },
-      { type: "text", value: "This is the second paragraph of project 2." },
+      { type: "img", value: p6img1 },
+      // { type: "text", value: "This is the first paragraph of project 2." },
+      // { type: "text", value: "This is the second paragraph of project 2." },
     ],
   },
 ];
