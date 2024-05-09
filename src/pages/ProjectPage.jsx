@@ -4,7 +4,7 @@ import Title from "../components/baseComponents/Title.jsx";
 import Button from "../components/baseComponents/Button.jsx";
 import PROJECTS from "../constants/projects.js";
 
-const ProgectPage = () => {
+const ProjectPage = () => {
   const { id } = useParams();
   const [currentProject, setCurrentProject] = useState(PROJECTS[id] || null);
 
@@ -33,7 +33,7 @@ const ProgectPage = () => {
                   target="_blank"
                   className="project__link"
                 >
-                  <b>Demo website:</b> {currentProject.demoLink}
+                  <b>Demo:</b> {currentProject.demoLink}
                 </a>
               )}
               {currentProject.link && (
@@ -46,8 +46,20 @@ const ProgectPage = () => {
                   {currentProject.link}
                 </a>
               )}
-              <p>
-                {currentProject.behance && (
+              {currentProject.github && (
+                <p>
+                  <a
+                    href={currentProject.github}
+                    target="_blank"
+                    className="project__link"
+                  >
+                    <b>GitHub:</b> {currentProject.github}
+                  </a>
+                </p>
+              )}
+
+              {currentProject.behance && (
+                <p>
                   <a
                     href={currentProject.behance}
                     target="_blank"
@@ -55,8 +67,8 @@ const ProgectPage = () => {
                   >
                     <b>Behance:</b> {currentProject.behance}
                   </a>
-                )}
-              </p>
+                </p>
+              )}
             </div>
             <p className="project__description">{currentProject.description}</p>
 
@@ -76,4 +88,4 @@ const ProgectPage = () => {
   );
 };
 
-export default ProgectPage;
+export default ProjectPage;

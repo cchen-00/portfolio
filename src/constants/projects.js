@@ -13,7 +13,6 @@ const PROJECTS = [
     subTitle: "AI Startup. Joined as a Frontend Developer",
     poster: p0img1,
     tags: ["frontend"],
-    gitHub: "",
     link: "https://www.deephow.com/",
     description:
       "DeepHow is an award-winning AI-powered, video-centric platform for skilled workforce training.",
@@ -38,7 +37,7 @@ const PROJECTS = [
     subTitle: "Fullstack Project",
     poster: p1img1,
     tags: ["frontend", "fullstack", "UI/UX"],
-    gitHub: "https://github.com/cchen-00/petshop",
+    github: "https://github.com/cchen-00/petshop",
     demoLink: "https://petshop-38o7.onrender.com/",
     description:
       "An eCommerce shop using the MERN stack along with Redux Toolkit.",
@@ -91,7 +90,7 @@ const PROJECTS = [
     subTitle: "Frontend React Project",
     poster: p2img1,
     tags: ["frontend", "UI/UX", "branding"],
-    gitHub: "https://github.com/cchen-00/portfolio",
+    github: "https://github.com/cchen-00/portfolio",
     link: "",
     behance: "https://www.behance.net/cchengraphfe83",
     description: "Frontend React project / Personal branding project.",
