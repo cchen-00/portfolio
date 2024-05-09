@@ -5,6 +5,7 @@ import SvgImg from "./baseComponents/SvgImg.jsx";
 import coffee from "../assets/images/coffee.svg";
 import SocialMediaIcons from "./SocialMediaIcons.jsx";
 import Title from "./baseComponents/Title.jsx";
+import emailjs from "@emailjs/browser";
 
 const validateEmail = (email) => {
   const re =
@@ -13,12 +14,45 @@ const validateEmail = (email) => {
 };
 
 const Contact = () => {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Form submitted with value:", email, message);
+
+    if (!name || !email || !message) {
+      alert("Please fill out all fields.");
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    const serviceId = import.meta.env.VITE_SERVICE_ID;
+    const templateId = import.meta.env.VITE_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: "Ember",
+      message: message,
+    };
+
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log("Email sent successfully!", response);
+        alert(
+          "Your message has been sent. Thank you! I will get back to you as soon as possible.s"
+        );
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
   };
 
   return (
@@ -39,6 +73,13 @@ const Contact = () => {
 
         <div className="contact__form">
           <form onSubmit={handleSubmit}>
+            <Input
+              value={name}
+              label="Name"
+              type="input"
+              required
+              onChange={setName}
+            />
             <Input
               value={email}
               label="Email"
