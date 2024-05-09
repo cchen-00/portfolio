@@ -4,7 +4,7 @@
 
 This React project is my portfolio website.
 It's designed by myself. Built with [Vite](https://vitejs.dev/), [EmailJS](https://www.emailjs.com/), and [Framer Motion](https://www.framer.com/motion/). 
-Styled CCSS with [SASS](https://sass-lang.com/) and [BEM](https://getbem.com/). Deployed by [Render](https://render.com/).
+Styled CSS with [SASS](https://sass-lang.com/) and [BEM](https://getbem.com/). Deployed with [Render](https://render.com/).
 
 View the live site: [ember-chen.site](https://ember-chen.site).
 
