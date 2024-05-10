@@ -17,6 +17,10 @@ const ProjectCard = ({ project }) => {
             </div>
           </div>
         </Link>
+        <div className="card__mobileText">
+          <h4 >{project.name}</h4>
+          <p>{project.subTitle}</p>
+        </div>
       </div>
     </div>
   );

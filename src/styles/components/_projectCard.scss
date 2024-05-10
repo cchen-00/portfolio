@@ -1,13 +1,13 @@
 .card {
   max-width: 360px;
   margin: 0 auto;
-  border: $borderColor 1.5px solid;
   &__wrapper {
     width: 100%;
     height: 0;
     padding-bottom: 75%;
     position: relative;
     overflow: hidden;
+    border: $borderColor 1.5px solid;
     &::before {
       content: "";
       z-index: 1;
@@ -52,16 +52,36 @@
   }
 
   &__wrapper {
-    &:hover::before {
-      opacity: 0.93;
-      background: linear-gradient(190deg, $blueColor -10%, $whiteColor 80%);
+    @include respond-to(not-mobile) {
+      &:hover::before {
+        opacity: 0.93;
+        background: linear-gradient(190deg, $blueColor -10%, $whiteColor 80%);
+      }
+      &:hover .card__img {
+        filter: grayscale(90%);
+        transform: scale(1.08);
+      }
+      &:hover .card__textWrapper {
+        opacity: 1;
+      }
     }
-    &:hover .card__img {
-      filter: grayscale(90%);
-      transform: scale(1.08);
-    }
-    &:hover .card__textWrapper {
-      opacity: 1;
+  }
+
+  &__mobileText {
+    display: none;
+    @include respond-to(mobile) {
+      display: block;
+      h4 {
+        margin: 10px 0 4px 0;
+        font-size: 20px;
+        color: $blackColor;
+        font-weight: 400;
+      }
+      p {
+        margin: 0;
+        font-size: 16px;
+        color: $darkerGreyColor;
+      }
     }
   }
 }

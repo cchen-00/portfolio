@@ -9,8 +9,8 @@
     z-index: 2;
     background: linear-gradient(
       180deg,
-      $bgColor 20%,
-      rgba(red($bgColor), green($bgColor), blue($bgColor), 0) 100%
+      $bgColor -10%,
+      rgba(red($bgColor), green($bgColor), blue($bgColor), 0) 90%
     );
     &__logo {
       z-index: 3;
@@ -37,7 +37,6 @@
       right: 22px;
       width: 40px;
       height: 40px;
-      padding-top: 4px;
       border-radius: 50%;
       background-color: $bgColor;
       background-color: darken($bgColor, $amount: 10%);
@@ -45,7 +44,12 @@
         background-color: $blueColor;
       }
       &--active {
-        background-color: $blueColor;
+        background-color: $whiteColor;
+      }
+      svg {
+        position: absolute;
+        left: 8px;
+        top: 8px;
       }
     }
 
@@ -75,10 +79,6 @@
         margin-left: auto;
         color: $blackColor;
         font-size: 1.1rem;
-        &:hover {
-          text-decoration: underline;
-          text-decoration-color: $blueColor;
-        }
       }
     }
     &__icons {

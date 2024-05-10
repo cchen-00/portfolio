@@ -23,6 +23,12 @@
       @content;
     }
   }
+
+  @if $media == not-mobile {
+    @media (min-width: ($mediaMobile + 1px)) {
+      @content;
+    }
+  }
 }
 
 @mixin flexCenter {

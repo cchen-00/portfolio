@@ -24,8 +24,10 @@
     &:active {
       transform: scale(0.95);
     }
-    &:hover {
-      background-color: $whiteColor;
+    @include respond-to(not-mobile) {
+      &:hover {
+        background-color: $whiteColor;
+      }
     }
     @include respond-to(mobile) {
       padding: 6px 12px;
