@@ -17,19 +17,6 @@
       position: relative;
       width: $headerMobileHeight;
     }
-    &__topLogo {
-      z-index: 3;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: $headerMobileHeight;
-      opacity: 0;
-      transition: all 0.3s;
-      cursor: pointer;
-      &:hover {
-        opacity: 1;
-      }
-    }
     &__menuBtn {
       z-index: 3;
       position: absolute;

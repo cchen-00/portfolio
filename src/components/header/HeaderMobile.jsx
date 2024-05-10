@@ -1,6 +1,5 @@
 import { useState } from "react";
 import logoColor from "../../assets/images/logo-color.png";
-import logoFullname from "../../assets/images/logo-fullname.png";
 import SocialMediaIcons from "../SocialMediaIcons.jsx";
 import SvgIcon from "../baseComponents/SvgIcon.jsx";
 import CloseIcon from "../../assets/icons/close.svg?react";
@@ -21,11 +20,6 @@ const HeaderMobile = () => {
           src={logoColor}
           alt="logo Ember Chen"
           className="navMobile__logo"
-        />
-        <img
-          src={logoFullname}
-          alt="logo Ember Chen"
-          className="navMobile__topLogo"
         />
       </a>
 
