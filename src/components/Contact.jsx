@@ -5,6 +5,8 @@ import SvgImg from "./baseComponents/SvgImg.jsx";
 import coffee from "../assets/images/coffee.svg";
 import SocialMediaIcons from "./SocialMediaIcons.jsx";
 import Title from "./baseComponents/Title.jsx";
+import thankYouImg from "../assets/images/thank_you.png";
+import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 const validateEmail = (email) => {
@@ -17,6 +19,14 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [showMessage, setShowMessage] = useState(false);
+
+  const showAndHideMessage = () => {
+    setShowMessage(true);
+    setTimeout(() => {
+      setShowMessage(false);
+    }, 5000);
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -46,9 +56,7 @@ const Contact = () => {
       .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
         console.log("Email sent successfully!", response);
-        alert(
-          "Your message has been sent. Thank you! I will get back to you as soon as possible.s"
-        );
+        showAndHideMessage();
       })
       .catch((error) => {
         console.error("Error sending email:", error);
@@ -108,6 +116,23 @@ const Contact = () => {
           alt="Coffee"
           className="contact__img"
         />
+        <div className="contact__thankYouImg">
+          <motion.img
+            src={thankYouImg}
+            width={300}
+            animate={{
+              x: showMessage ? 0 : 0,
+              y: showMessage ? -240 : 0,
+            }}
+            transition={{
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+              scale: {
+                type: "spring",
+              },
+            }}
+          />
+        </div>
       </div>
     </div>
   );

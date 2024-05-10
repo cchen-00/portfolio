@@ -36,4 +36,12 @@
   &__btn {
     margin-top: 6px;
   }
+  &__thankYouImg {
+    position: absolute;
+    right: 80px;
+    bottom: -270px;
+    @include respond-to(mobile) {
+      right: 0;
+    }
+  }
 }
