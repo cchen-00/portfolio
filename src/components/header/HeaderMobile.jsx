@@ -13,6 +13,10 @@ const HeaderMobile = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className="navMobile">
       <a href="/#hero">
@@ -43,7 +47,9 @@ const HeaderMobile = () => {
       >
         {NAV_ITEMS.map((item, index) => (
           <div key={index} className="navMobile__item">
-            <a href={`/${item.link}`}>{item.name}</a>
+            <a href={`/${item.link}`} onClick={closeMenu}>
+              {item.name}
+            </a>
           </div>
         ))}
 
