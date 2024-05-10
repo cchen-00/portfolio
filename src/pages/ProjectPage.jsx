@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import Title from "../components/baseComponents/Title.jsx";
-import Button from "../components/baseComponents/Button.jsx";
+import ArrowIcon from "../assets/icons/arrow_icon.svg?react";
+import SvgIcon from "../components/baseComponents/SvgIcon.jsx";
 import PROJECTS from "../constants/projects.js";
 
 const ProjectPage = () => {
@@ -11,6 +12,11 @@ const ProjectPage = () => {
   return (
     <div className="project">
       <div className="project__container">
+        <a href="/#projects" className="project__backBtn">
+          <SvgIcon size="24px" title="back arrow">
+            <ArrowIcon />
+          </SvgIcon>
+        </a>
         {currentProject ? (
           <>
             <div className="project__tags">
