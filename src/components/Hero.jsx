@@ -29,10 +29,10 @@ const Hero = () => {
         </div>
 
         <p className="hero__description">
-          Hi, I am a front-end engineer with 4 years of experience, plus 2 years
-          of design background in advertising agencies. I'm passionate about
-          creating cutting-edge, pixel-perfect, and beautiful UI/UX with clean
-          code.
+          Hi, I am a front-end developer with over 4 years of experience, plus 2
+          years of design background in advertising agencies. I'm passionate
+          about creating cutting-edge, pixel-perfect, and beautiful UI/UX with
+          clean code.
         </p>
 
         <a href="#projects">
