@@ -33,15 +33,6 @@ const ProjectPage = () => {
             </div>
 
             <div className="project__links">
-              {currentProject.demoLink && (
-                <a
-                  href={currentProject.demoLink}
-                  target="_blank"
-                  className="project__link"
-                >
-                  <b>Demo:</b> {currentProject.demoLink}
-                </a>
-              )}
               {currentProject.link && (
                 <a
                   href={currentProject.link}
@@ -63,7 +54,6 @@ const ProjectPage = () => {
                   </a>
                 </p>
               )}
-
               {currentProject.behance && (
                 <p>
                   <a
@@ -75,14 +65,35 @@ const ProjectPage = () => {
                   </a>
                 </p>
               )}
+              {currentProject.demoLink && (
+                <a
+                  href={currentProject.demoLink}
+                  target="_blank"
+                  className="project__link"
+                >
+                  <b>Demo:</b> {currentProject.demoLink}
+                </a>
+              )}
             </div>
             <p className="project__description">{currentProject.description}</p>
 
             {currentProject.content.map((item, index) => {
-              if (item.type === "text") {
+              if (item.type === "subtitle") {
+                return <h3 key={index}>{item.value}</h3>;
+              } else if (item.type === "text") {
                 return <p key={index}>{item.value}</p>;
               } else if (item.type === "img") {
                 return <img key={index} src={item.value} alt="Project" />;
+              } else if (item.type === "list") {
+                return (
+                  <ul key={index}>
+                    {item.value.map((listItem, index) => (
+                      <li key={index}>{listItem}</li>
+                    ))}
+                  </ul>
+                );
+              } else if (item.type === "divider") {
+                return <hr />;
               }
             })}
           </>

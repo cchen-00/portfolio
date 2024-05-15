@@ -3,7 +3,8 @@ import p1img1 from "../assets/images/projects/p1_cover.png";
 import p2img1 from "../assets/images/projects/p2_cover.png";
 import p4img1 from "../assets/images/projects/p4_cover.png";
 import p5img1 from "../assets/images/projects/p5_cover.png";
-import p6img1 from "../assets/images/projects/p6_cover.png";
+import p6img0 from "../assets/images/projects/p6_cover.png";
+import p6img1 from "../assets/images/projects/p6_img1.png";
 import { LINKS } from "./constants";
 
 const PROJECTS = [
@@ -20,9 +21,13 @@ const PROJECTS = [
     content: [
       { type: "img", value: p0img1 },
       {
-        type: "text",
-        value:
-          "As the first front-end developer, I played a key role in building the MVP and establishing the technical foundation for this project. I implemented new features using a modern tech stack including HTML/CSS, JavaScript, Vue.js, Vuex, and Vuetify.  Later, I took ownership of critical modules like the Video Player, Navigator, Skills, and User Profile, ensuring their ongoing optimization, maintenance, and seamless cross-device compatibility across desktop and mobile.  I also actively collaborated with designers to refine the UI/UX of new features. ",
+        type: "list",
+        value: [
+          "Joined as the first front-end developer, contributing to MVP development. In the later stage, owned the ongoing optimization and maintenance of critical modules like Video Player,  Navigator, Skills, and User Profile. ",
+          "Implemented new features using HTML/CSS, JavaScript, Vue, Vuex, and Vuetify.",
+          "Ensured cross-device compatibility for desktop and mobile, providing a seamless user experience.",
+          "Reviewed designs and helped shape the eventual UX of new features",
+        ],
       },
       {
         type: "text",
@@ -35,52 +40,94 @@ const PROJECTS = [
     id: 1,
     type: "coding",
     name: "Pet Supplies E-shop",
-    subTitle: "Fullstack Project",
+    subTitle: "Fullstack Project (MERN)",
     poster: p1img1,
     tags: ["frontend", "fullstack", "UI/UX"],
     github: "https://github.com/cchen-00/petshop",
     demoLink: "https://petshop-38o7.onrender.com/",
     description:
-      "An eCommerce shop using the MERN stack along with Redux Toolkit.",
+      "Designed and built a fully functional e-commerce website to solidify my understanding of the MERN stack (MongoDB, Express, React, Node. js) and explore the capabilities of the Redux Toolkit.",
     content: [
       { type: "img", value: p1img1 },
       {
-        type: "text",
-        value: "Admin test account:",
+        type: "subtitle",
+        value: "Test Accounts:",
       },
       {
         type: "text",
-        value: "Email: admin@123.com",
+        value: "Admin user: admin@123.com | 123456",
       },
       {
         type: "text",
-        value: "Password:123456",
+        value: "Regular user: test@123.com | 123456",
+      },
+      { type: "divider" },
+      {
+        type: "subtitle",
+        value: "Tech Stack:",
       },
       {
         type: "text",
-        value:
-          "I built this comprehensive e-commerce application from scratch, handling both front-end and back-end development. My expertise includes:",
-      },
-
-      {
-        type: "text",
-        value:
-          "Full-Stack Development: MERN stack for architecture, Redux Toolkit for state management, data modeling, MongoDB database, RESTful APIs, custom database seeder.",
-      },
-      {
-        type: "text",
-        value:
-          "Front-End Development: UI/UX design, React.js for dynamic frontend, Redux Toolkit for state management.",
+        value: "Front-End:",
       },
       {
         type: "text",
         value:
-          "E-commerce Features: Shopping cart, product reviews, product carousel, pagination, search, user profile, order history, admin panel, product management, user management, order management, secure checkout.",
+          "Built with HTML/CSS, JavaScript, Create React app, React, and Redux Toolkit. Security checkout with PayPal",
+      },
+      {
+        type: "text",
+        value: "Back-End:",
       },
       {
         type: "text",
         value:
-          "UI/UX Design: I designed the website's UI/UX with Bootstrap components and created the logo and banners using Adobe Illustrator and Photoshop.",
+          "Architecture: MERN stack (MongoDB, Express, React, and Node. js). Security: JWT Authentication",
+      },
+      {
+        type: "text",
+        value: "Design:",
+      },
+      {
+        type: "text",
+        value:
+          "Logo & Banners: Adobe Illustrator and Photoshop. UI: Bootstrap Components (Responsive)",
+      },
+      { type: "divider" },
+      {
+        type: "subtitle",
+        value: "Project Features:",
+      },
+      {
+        type: "text",
+        value: "All users:",
+      },
+      {
+        type: "list",
+        value: [
+          "Comprehensive Product Page: The products page features pagination and allows users to filter products based on entered keywords, and categories. Products could also be sorted by price or creation date.",
+          "Complete Shopping Cart and Payment/Order Creation: Users can seamlessly add items to their cart, proceed to checkout, and complete the payment process to place orders.",
+          "User Registration and Login: New users can register using their email address and password, and existing users can log in to their accounts.",
+          "User Profile Management: Users can access their profiles to edit personal information, set default shipping addresses, and view their order history.",
+          "Brand Building and Marketing Modules: Most Popular, On Sale, and About Us modules enhance brand awareness and promote marketing campaigns, contributing to a well-rounded website experience.",
+        ],
+      },
+      {
+        type: "text",
+        value: "Admin Users:",
+      },
+      {
+        type: "list",
+        value: [
+          "Admin dashboard provides comprehensive management tools for orders, users, and products.",
+          "Product Management: Create, edit, or delete products. Control product visibility (publish/unpublish). Feature products in &quot;Most Popular&quot; section. Set special sale prices.",
+          "User Management: View detailed user information and order history. Remove non-admin users.",
+          "Order Management: View all orders. Update order status (paid/delivered).",
+        ],
+      },
+      {
+        type: "text",
+        value: "",
       },
     ],
   },
@@ -92,7 +139,7 @@ const PROJECTS = [
     poster: p2img1,
     tags: ["frontend", "UI/UX", "branding"],
     github: "https://github.com/cchen-00/portfolio",
-    link: "",
+    demoLink: "https://ember-chen.site",
     behance: LINKS.behance,
     description: "Frontend React project / Personal branding project.",
     content: [
@@ -100,14 +147,26 @@ const PROJECTS = [
       {
         type: "text",
         value:
-          "This website is designed with Adobe Illustrator and Photoshop. Built with Vite and React. Used SASS to format the Style",
+          "My personal portfolio website. It's a curated collection of my development and design projects.",
+      },
+      {
+        type: "list",
+        value: [
+          "UI, logo, and images are created with Adobe Illustrator and Photoshop.",
+          "Responsive web design, ensures an exceptional user experience across all screens.",
+          "Built with HTML/CSS, JavaScript, Vite and React.",
+          "Added animation effects with Framer Motion.",
+          "Styled CSS with SASS and BEM.",
+          "Sent message in Contact with EmailJS.",
+          "Deployed with Render, added custom domain.",
+        ],
       },
     ],
   },
   {
     id: 3,
     type: "design",
-    name: "ZGZG Chinese New Year GALA",
+    name: "ZGZG New Year GALA",
     subTitle: "Main designer for the event",
     poster: p4img1,
     tags: ["branding", "graphic design", "illustration"],
@@ -141,15 +200,14 @@ const PROJECTS = [
     type: "design",
     name: "Icon Set Design",
     subTitle: "",
-    poster: p6img1,
+    poster: p6img0,
     tags: ["icons", "UI/UX"],
     behance: LINKS.behance,
     link: "",
-    description: "",
+    description: "Factory theme icon set",
     content: [
+      { type: "img", value: p6img0 },
       { type: "img", value: p6img1 },
-      // { type: "text", value: "This is the first paragraph of project 2." },
-      // { type: "text", value: "This is the second paragraph of project 2." },
     ],
   },
 ];

@@ -31,14 +31,12 @@
     padding: 46px 32px 90px 32px;
     max-width: $mediaTablet;
     margin: 0 auto;
-    p {
-      @include contentText;
-    }
     img {
       width: 100%;
-      max-width: 500px;
+      max-width: 760px;
       object-fit: cover;
     }
+    @include contentText;
     @include respond-to(mobile) {
       padding: 90px 32px 90px 32px;
     }
@@ -52,6 +50,7 @@
   &__tag {
     color: $blackColor;
     font-size: 12px;
+    line-height: 14px;
     padding: 4px 8px;
     border-radius: 8px;
     border: $blackColor 1px solid;
