@@ -1,0 +1,5 @@
+.notFound {
+  @include flexCenter;
+  height: calc(100vh - 120px);
+  min-height: 500px;
+}
