@@ -2,7 +2,10 @@ import p0img1 from "../assets/images/projects/p0_cover.png";
 import p1img1 from "../assets/images/projects/p1_cover.png";
 import p2img1 from "../assets/images/projects/p2_cover.png";
 import p4img1 from "../assets/images/projects/p4_cover.png";
-import p5img1 from "../assets/images/projects/p5_cover.png";
+import p5img0 from "../assets/images/projects/p5_cover.png";
+import p5img1 from "../assets/images/projects/p5_img1.jpg";
+import p5img2 from "../assets/images/projects/p5_img2.png";
+import p5img3 from "../assets/images/projects/p5_img3.png";
 import p6img0 from "../assets/images/projects/p6_cover.png";
 import p6img1 from "../assets/images/projects/p6_img1.png";
 import { LINKS } from "./constants";
@@ -184,15 +187,33 @@ const PROJECTS = [
     type: "design",
     name: "AmeriGanic",
     subTitle: "Branding Project",
-    poster: p5img1,
+    poster: p5img0,
     tags: ["branding", "graphic design"],
     behance: LINKS.behance,
     link: "",
     description: "",
     content: [
+      {
+        type: "text",
+        value:
+          "AmeriGanic is an organic store in Shijiazhuang, China, specializing in bringing premium American organic products to the Chinese market. ",
+      },
+      {
+        type: "text",
+        value:
+          "This freelance project is a favorite of mine – I designed their logo, name cards, product category icons, flyer and coupons.",
+      },
       { type: "img", value: p5img1 },
-      // { type: "text", value: "This is the first paragraph of project 2." },
-      // { type: "text", value: "This is the second paragraph of project 2." },
+
+      {
+        type: "text",
+        value:
+          "To introduce American organic brands to local customers, AmeriGanic needed an informative yet budget-friendly flyer. We opted for a foldable brochure format, maximizing space while maintaining a clean, organized presentation.",
+      },
+      { type: "img", value: p5img2 },
+
+      { type: "text", value: "Store coupons: " },
+      { type: "img", value: p5img3 },
     ],
   },
   {

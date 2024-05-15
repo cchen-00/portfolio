@@ -9,7 +9,7 @@
     content: "";
     z-index: -1;
     position: absolute;
-    width: 110%;
+    width: calc(100% + 24px);
     height: 28px;
     top: 28px;
     left: 12px;
