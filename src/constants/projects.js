@@ -1,7 +1,16 @@
 import p0img1 from "../assets/images/projects/p0_cover.png";
 import p1img1 from "../assets/images/projects/p1_cover.png";
 import p2img1 from "../assets/images/projects/p2_cover.png";
-import p4img1 from "../assets/images/projects/p4_cover.png";
+import p4img0 from "../assets/images/projects/p4_cover.png";
+import p4img1 from "../assets/images/projects/p4_img1.png";
+import p4img2 from "../assets/images/projects/p4_img2.png";
+import p4img3 from "../assets/images/projects/p4_img3.png";
+import p4img4 from "../assets/images/projects/p4_img4.png";
+import p4img5 from "../assets/images/projects/p4_img5.png";
+import p4img6 from "../assets/images/projects/p4_img6.png";
+import p4img7 from "../assets/images/projects/p4_img7.png";
+import p4img8 from "../assets/images/projects/p4_img8.png";
+import p4img9 from "../assets/images/projects/p4_img9.png";
 import p5img0 from "../assets/images/projects/p5_cover.png";
 import p5img1 from "../assets/images/projects/p5_img1.jpg";
 import p5img2 from "../assets/images/projects/p5_img2.png";
@@ -171,15 +180,22 @@ const PROJECTS = [
     type: "design",
     name: "ZGZG New Year GALA",
     subTitle: "Main designer for the event",
-    poster: p4img1,
+    poster: p4img0,
     tags: ["branding", "graphic design", "illustration"],
     behance: LINKS.behance,
     link: "https://www.zgzg.io/",
-    description: "",
+    description:
+      "I designed the key visual of the 2024 ZaiGeZaiGu Chinese New Year GALA. Also completed the design for multiple versions of posters, websites, event badges, canvas bags, and volunteer certificates.",
     content: [
       { type: "img", value: p4img1 },
-      // { type: "text", value: "This is the first paragraph of project 2." },
-      // { type: "text", value: "This is the second paragraph of project 2." },
+      { type: "img", value: p4img2 },
+      { type: "img", value: p4img3 },
+      { type: "img", value: p4img4 },
+      { type: "img", value: p4img5 },
+      { type: "img", value: p4img6 },
+      { type: "img", value: p4img7 },
+      { type: "img", value: p4img8 },
+      { type: "img", value: p4img9 },
     ],
   },
   {
