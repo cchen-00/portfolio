@@ -20,11 +20,10 @@ export const NAV_ITEMS = [
 export const PROJECT_TAGS = [
   "all projects",
   "frontend",
-  "fullstack",
+  "full-stack",
   "UI/UX",
   "icons",
   "branding",
-  "packaging",
   "illustration",
 ];
 

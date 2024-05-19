@@ -52,9 +52,9 @@ const PROJECTS = [
     id: 1,
     type: "coding",
     name: "Pet Supplies E-shop",
-    subTitle: "Fullstack Project (MERN)",
+    subTitle: "Full-Stack Project (MERN)",
     poster: p1img1,
-    tags: ["frontend", "fullstack", "UI/UX"],
+    tags: ["frontend", "full-stack", "UI/UX"],
     github: "https://github.com/cchen-00/petshop",
     demoLink: "https://petshop-38o7.onrender.com/",
     description:
@@ -132,7 +132,7 @@ const PROJECTS = [
         type: "list",
         value: [
           "Admin dashboard provides comprehensive management tools for orders, users, and products.",
-          "Product Management: Create, edit, or delete products. Control product visibility (publish/unpublish). Feature products in &quot;Most Popular&quot; section. Set special sale prices.",
+          'Product Management: Create, edit, or delete products. Control product visibility (publish/unpublish). Feature products in "Most Popular" section. Set special sale prices.',
           "User Management: View detailed user information and order history. Remove non-admin users.",
           "Order Management: View all orders. Update order status (paid/delivered).",
         ],
@@ -184,9 +184,23 @@ const PROJECTS = [
     tags: ["branding", "graphic design", "illustration"],
     behance: LINKS.behance,
     link: "https://www.zgzg.io/",
-    description:
-      "I designed the key visual of the 2024 ZaiGeZaiGu Chinese New Year GALA. Also completed the design for multiple versions of posters, websites, event badges, canvas bags, and volunteer certificates.",
+    description: "",
     content: [
+      {
+        type: "text",
+        value:
+          "ZaiGeZaiGu (载歌在谷), or ZGZG for short, is a volunteer community established in 2014 by a group of passionate individuals at Google Mountain View, California. It's a project of Community Builder Toolbox, Inc., a US-registered non-profit organization.",
+      },
+      {
+        type: "text",
+        value:
+          'The Chinese New Year Gala, or "Chunwan" as it\'s traditionally known, is a beloved tradition for Chinese communities worldwide, bringing families and friends together for a vibrant variety show. In 2015, ZGZG proudly hosted its inaugural Chinese New Year Gala in the San Francisco Bay Area, and this year, 2024, marks a momentous 10th anniversary!',
+      },
+      {
+        type: "text",
+        value:
+          "I was thrilled to join the design team and contribute to this milestone event.  I created this key visual from scratch, and designed a comprehensive suite of materials including posters, website elements, event badges, canvas bags, and volunteer certificates.",
+      },
       { type: "img", value: p4img1 },
       { type: "img", value: p4img2 },
       { type: "img", value: p4img3 },
