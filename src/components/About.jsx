@@ -49,7 +49,7 @@ const About = () => {
               </li>
               <li>Excellent communication and collaboration skills.</li>
             </ul>
-            <a href={RESUME_LINK} target="_blank">
+            {/* <a href={RESUME_LINK} target="_blank">
               <Button>
                 My Resume
                 <SvgIcon
@@ -64,7 +64,7 @@ const About = () => {
             <p>
               I am currently seeking full-time/part-time opportunities. Feel
               free to reach out.
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="col about__container--right">
